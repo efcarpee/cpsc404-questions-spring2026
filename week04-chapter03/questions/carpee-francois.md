@@ -1,0 +1,2 @@
+The chapter argues that being loyal to your manager  is important. But can someone be loyal to their manager and loyal to the organization at the same time? Are those two things the same or are they fundamentally different? If they are different, which loyalty takes priority when they conflict? Whose interest would you favor? Your manager's or the company's and how do you make that decision without damaging either relationship?
+
