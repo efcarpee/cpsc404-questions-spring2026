@@ -1,0 +1,3 @@
+# Week 10 Question – Saffi, Hanna
+
+In *Help Your Boss Help You*, "going over your boss's head" is framed as a high-risk move that can permanently damage trust within a chain of command — yet sometimes it's necessary when direct communication fails. In open source, the structural equivalent might be forking: a last-resort signal that the current leadership has lost the community's confidence. Both actions carry social costs and are most effective as *threats* rather than actions actually carried out. So when does the threat itself become the real mechanism of accountability — and does making that threat explicit (e.g., publicly discussing a fork, or cc'ing a skip-level) strengthen or undermine the governance structures that make it powerful in the first place?
