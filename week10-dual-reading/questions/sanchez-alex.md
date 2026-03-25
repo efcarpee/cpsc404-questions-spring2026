@@ -1,0 +1,5 @@
+## Week 10: Dual Reading — Hierarchy vs. Governance
+
+How does chain of command shape or influence decision-making and whether you're able to challenge authority in corporate hierarchies compared to open-source, where authority is formed from contribution and forkability acts as a check on power?
+
+If a manager were to make a decision that you did not agree with and that you think is clearly wrong, you want push back a bit, but eventually you probably just go along with it to not disrupt the relationship and to maintain it. On the other hand, in an open source project, if something goes unplanned/unwanted, you can either challenge it or choose to leave and fork the project. In a company, going around your boss can disrupt the relationship as you can seem disloyal and break trust, in comparison to open-source project, there is not really a strict chain of command, and people do have the option to disagree and choose to leave without consequences of working for a company.
