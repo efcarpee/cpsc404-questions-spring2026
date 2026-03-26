@@ -35,6 +35,9 @@
     </div>
 
     <div class="deck-area" id="deckArea">
+        <div class="deck-card deck-card-3"></div>
+        <div class="deck-card deck-card-2"></div>
+        <div class="deck-card deck-card-1"></div>
         <div class="question-card" id="card">
             <div class="placeholder">Select a week to begin</div>
         </div>
@@ -182,8 +185,12 @@
         function updateDeckVisual() {
             if (!pool || pool.remaining <= 1) {
                 deckArea.classList.add('deck-empty');
-            } else {
+                deckArea.classList.remove('deck-few');
+            } else if (pool.remaining <= Math.ceil(pool.total / 3)) {
+                deckArea.classList.add('deck-few');
                 deckArea.classList.remove('deck-empty');
+            } else {
+                deckArea.classList.remove('deck-few', 'deck-empty');
             }
         }
 

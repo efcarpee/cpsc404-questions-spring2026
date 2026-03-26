@@ -21,7 +21,7 @@
     --text-button: #2c2416;
     --font-display: 'Georgia', 'Times New Roman', serif;
     --font-body: 'Segoe UI', system-ui, -apple-system, sans-serif;
-    --deck-offset: 2px;
+    --deck-offset: 5px;
 }
 
 /* ── Dark mode ── */
@@ -218,33 +218,39 @@ button:disabled {
     perspective: 800px;
 }
 
-/* Stacked deck shadow behind the card */
-.deck-area::before,
-.deck-area::after {
-    content: '';
+/* Stacked deck cards behind the main card */
+.deck-card {
     position: absolute;
     inset: 0;
     background: var(--bg-card);
     border: 2px solid var(--border-card);
     border-radius: 12px;
-    box-shadow: var(--shadow-card);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
     z-index: 0;
-    transition: opacity 0.3s;
+    transition: opacity 0.4s ease, transform 0.4s ease;
 }
 
-.deck-area::before {
-    transform: translate(calc(var(--deck-offset) * 2), calc(var(--deck-offset) * 2)) rotate(0.8deg);
-    opacity: var(--deck-show, 1);
+.deck-card-1 {
+    transform: translate(6px, 6px) rotate(1.5deg);
 }
 
-.deck-area::after {
-    transform: translate(var(--deck-offset), var(--deck-offset)) rotate(-0.4deg);
-    opacity: var(--deck-show, 1);
+.deck-card-2 {
+    transform: translate(12px, 10px) rotate(-2.2deg);
 }
 
-.deck-area.deck-empty::before,
-.deck-area.deck-empty::after {
+.deck-card-3 {
+    transform: translate(3px, 14px) rotate(3deg);
+}
+
+/* Hide deck cards progressively as pool shrinks */
+.deck-area.deck-few .deck-card-3 {
     opacity: 0;
+    transform: translate(12px, 10px) rotate(-2.2deg) scale(0.97);
+}
+
+.deck-area.deck-empty .deck-card {
+    opacity: 0;
+    transform: translate(0, 0) rotate(0) scale(0.98);
 }
 
 /* ── The question card itself ── */
